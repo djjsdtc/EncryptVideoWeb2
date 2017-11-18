@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="EncryptVideoWeb2:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/EncryptVideoWeb2_war</output-path>
+    <root id="archive" name="encryptvideoweb2.war">
+      <element id="artifact" artifact-name="EncryptVideoWeb2:war exploded" />
+    </root>
+  </artifact>
+</component>

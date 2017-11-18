@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - encvideo@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="encvideo">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="ptwittdb"/>
+    <table id="6" parent="1" name="storedtags"/>
+    <table id="7" parent="1" name="storedvideos"/>
+    <table id="8" parent="1" name="subscriptions"/>
+    <table id="9" parent="1" name="publishers"/>
+    <table id="10" parent="1" name="viewers"/>
+    <column id="11" parent="6" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="12" parent="6" name="messageId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="13" parent="6" name="tStar">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="14" parent="6" name="encKey">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <key id="15" parent="6" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="16" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="17" parent="7" name="userID">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="18" parent="7" name="cipherTitle">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="19" parent="7" name="cipherIntro">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="20" parent="7" name="cipherAddr">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="21" parent="7" name="status">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <key id="22" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="23" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="24" parent="8" name="userID">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="25" parent="8" name="status">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="26" parent="8" name="M">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="27" parent="8" name="destUserID">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="28" parent="8" name="tagName">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="29" parent="8" name="MPrime">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <key id="30" parent="8" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="31" parent="9" name="publicKey">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="32" parent="9" name="password">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="33" parent="9" name="clientID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="34" parent="9" name="sessionID">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <key id="35" parent="9" name="PRIMARY">
+      <columns>clientID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="36" parent="10" name="password">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="37" parent="10" name="clientID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="38" parent="10" name="sessionID">
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <key id="39" parent="10" name="PRIMARY">
+      <columns>clientID</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
